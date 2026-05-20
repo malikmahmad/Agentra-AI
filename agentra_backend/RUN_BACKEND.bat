@@ -1,0 +1,6 @@
+@echo off
+echo Starting Agentra Public Tunnel...
+start /B cloudflared.exe tunnel --url http://localhost:8000
+echo Starting Agentra Backend Server...
+python main.py
+pause
